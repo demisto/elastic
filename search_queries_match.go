@@ -187,3 +187,13 @@ func (q *MatchQuery) Source() (interface{}, error) {
 
 	return source, nil
 }
+
+// SetName sets query name.
+func (q *MatchQuery) SetName(name string) {
+	q.name = name
+}
+
+// Name returns the query name.
+func (q *MatchQuery) Name() string {
+	return q.name
+}

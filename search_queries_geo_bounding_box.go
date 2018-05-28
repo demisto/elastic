@@ -119,3 +119,13 @@ func (q *GeoBoundingBoxQuery) Source() (interface{}, error) {
 
 	return source, nil
 }
+
+// SetName sets query name.
+func (q *GeoBoundingBoxQuery) SetName(name string) {
+	q.name = name
+}
+
+// Name returns the query name.
+func (q *GeoBoundingBoxQuery) Name() string {
+	return q.name
+}

@@ -80,3 +80,13 @@ func (q *RegexpQuery) Source() (interface{}, error) {
 
 	return source, nil
 }
+
+// SetName sets query name.
+func (q *RegexpQuery) SetName(name string) {
+	q.name = name
+}
+
+// Name returns the query name.
+func (q *RegexpQuery) Name() string {
+	return q.name
+}

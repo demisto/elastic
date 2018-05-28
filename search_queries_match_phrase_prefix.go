@@ -87,3 +87,13 @@ func (q *MatchPhrasePrefixQuery) Source() (interface{}, error) {
 
 	return source, nil
 }
+
+// SetName sets query name.
+func (q *MatchPhrasePrefixQuery) SetName(name string) {
+	q.name = name
+}
+
+// Name returns the query name.
+func (q *MatchPhrasePrefixQuery) Name() string {
+	return q.name
+}

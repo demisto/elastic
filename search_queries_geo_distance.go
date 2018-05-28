@@ -105,3 +105,13 @@ func (q *GeoDistanceQuery) Source() (interface{}, error) {
 
 	return source, nil
 }
+
+// SetName sets query name.
+func (q *GeoDistanceQuery) SetName(name string) {
+	q.name = name
+}
+
+// Name returns the query name.
+func (q *GeoDistanceQuery) Name() string {
+	return q.name
+}

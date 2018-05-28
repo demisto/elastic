@@ -70,3 +70,13 @@ func (q *GeoPolygonQuery) Source() (interface{}, error) {
 
 	return source, nil
 }
+
+// SetName sets query name.
+func (q *GeoPolygonQuery) SetName(name string) {
+	q.name = name
+}
+
+// Name returns the query name.
+func (q *GeoPolygonQuery) Name() string {
+	return q.name
+}

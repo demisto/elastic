@@ -118,3 +118,13 @@ func (q *FuzzyQuery) Source() (interface{}, error) {
 
 	return source, nil
 }
+
+// SetName sets query name.
+func (q *FuzzyQuery) SetName(name string) {
+	q.name = name
+}
+
+// Name returns the query name.
+func (q *FuzzyQuery) Name() string {
+	return q.name
+}

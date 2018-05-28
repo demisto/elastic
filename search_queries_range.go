@@ -153,3 +153,13 @@ func (q *RangeQuery) Source() (interface{}, error) {
 
 	return source, nil
 }
+
+// SetName sets query name.
+func (q *RangeQuery) SetName(name string) {
+	q.name = name
+}
+
+// Name returns the query name.
+func (q *RangeQuery) Name() string {
+	return q.name
+}

@@ -65,3 +65,13 @@ func (q *PrefixQuery) Source() (interface{}, error) {
 
 	return source, nil
 }
+
+// SetName sets query name.
+func (q *PrefixQuery) SetName(name string) {
+	q.name = name
+}
+
+// Name returns the query name.
+func (q *PrefixQuery) Name() string {
+	return q.name
+}

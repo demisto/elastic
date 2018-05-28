@@ -135,3 +135,13 @@ func (q *CommonTermsQuery) Source() (interface{}, error) {
 
 	return source, nil
 }
+
+// SetName sets query name.
+func (q *CommonTermsQuery) SetName(name string) {
+	q.name = name
+}
+
+// Name returns the query name.
+func (q *CommonTermsQuery) Name() string {
+	return q.name
+}

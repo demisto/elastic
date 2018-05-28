@@ -79,3 +79,13 @@ func (q *WildcardQuery) Source() (interface{}, error) {
 
 	return source, nil
 }
+
+// SetName sets query name.
+func (q *WildcardQuery) SetName(name string) {
+	q.name = name
+}
+
+// Name returns the query name.
+func (q *WildcardQuery) Name() string {
+	return q.name
+}

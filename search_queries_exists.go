@@ -47,3 +47,13 @@ func (q *ExistsQuery) Source() (interface{}, error) {
 
 	return query, nil
 }
+
+// SetName sets query name.
+func (q *ExistsQuery) SetName(name string) {
+	q.name = name
+}
+
+// Name returns the query name.
+func (q *ExistsQuery) Name() string {
+	return q.name
+}

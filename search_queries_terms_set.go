@@ -94,3 +94,13 @@ func (q *TermsSetQuery) Source() (interface{}, error) {
 
 	return source, nil
 }
+
+// SetName sets query name.
+func (q *TermsSetQuery) SetName(name string) {
+	q.name = name
+}
+
+// Name returns the query name.
+func (q *TermsSetQuery) Name() string {
+	return q.name
+}
