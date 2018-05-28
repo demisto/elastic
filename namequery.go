@@ -6,6 +6,7 @@ package elastic
 
 // NameQuery represents a query which is attached to a specific name.
 type NameQuery interface {
+	Query
 	// SetName sets query name.
 	SetName(name string)
 	// Name returns the query name.
