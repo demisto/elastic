@@ -132,3 +132,7 @@ func (q *FuzzyQuery) Name() string {
 func (q *FuzzyQuery) SetBoost(boost float64) {
 	q.boost = &boost
 }
+
+func (q *FuzzyQuery) GetBoost() float64 {
+	return *q.boost
+}

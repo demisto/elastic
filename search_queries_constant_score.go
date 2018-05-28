@@ -61,3 +61,7 @@ func (q *ConstantScoreQuery) Source() (interface{}, error) {
 func (q *ConstantScoreQuery) SetBoost(boost float64) {
 	q.boost = &boost
 }
+
+func (q *ConstantScoreQuery) GetBoost() float64 {
+	return *q.boost
+}

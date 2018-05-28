@@ -7,4 +7,5 @@ package elastic
 type BoostQuery interface {
 	Query
 	SetBoost(boost float64)
+	GetBoost() float64
 }

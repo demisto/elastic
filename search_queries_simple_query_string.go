@@ -248,3 +248,7 @@ func (q *SimpleQueryStringQuery) Source() (interface{}, error) {
 func (q *SimpleQueryStringQuery) SetBoost(boost float64) {
 	q.boost = &boost
 }
+
+func (q *SimpleQueryStringQuery) GetBoost() float64 {
+	return *q.boost
+}

@@ -217,3 +217,7 @@ func (q *BoolQuery) Source() (interface{}, error) {
 func (q *BoolQuery) SetBoost(boost float64) {
 	q.boost = &boost
 }
+
+func (q *BoolQuery) GetBoost() float64 {
+	return *q.boost
+}

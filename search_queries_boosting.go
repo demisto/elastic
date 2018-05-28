@@ -99,3 +99,7 @@ func (q *BoostingQuery) Source() (interface{}, error) {
 func (q *BoostingQuery) SetBoost(boost float64) {
 	q.boost = &boost
 }
+
+func (q *BoostingQuery) GetBoost() float64 {
+	return *q.boost
+}

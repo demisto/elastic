@@ -167,3 +167,7 @@ func (q *RangeQuery) Name() string {
 func (q *RangeQuery) SetBoost(boost float64) {
 	q.boost = &boost
 }
+
+func (q *RangeQuery) GetBoost() float64 {
+	return *q.boost
+}

@@ -101,3 +101,7 @@ func (q *MatchPhrasePrefixQuery) Name() string {
 func (q *MatchPhrasePrefixQuery) SetBoost(boost float64) {
 	q.boost = &boost
 }
+
+func (q *MatchPhrasePrefixQuery) GetBoost() float64 {
+	return *q.boost
+}

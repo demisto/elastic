@@ -162,3 +162,7 @@ func (q *FunctionScoreQuery) Source() (interface{}, error) {
 func (q *FunctionScoreQuery) SetBoost(boost float64) {
 	q.boost = &boost
 }
+
+func (q *FunctionScoreQuery) GetBoost() float64 {
+	return *q.boost
+}

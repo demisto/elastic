@@ -79,3 +79,7 @@ func (q *PrefixQuery) Name() string {
 func (q *PrefixQuery) SetBoost(boost float64) {
 	q.boost = &boost
 }
+
+func (q *PrefixQuery) GetBoost() float64 {
+	return *q.boost
+}

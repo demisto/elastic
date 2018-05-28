@@ -53,3 +53,7 @@ func (q MatchAllQuery) Source() (interface{}, error) {
 func (q *MatchAllQuery) SetBoost(boost float64) {
 	q.boost = &boost
 }
+
+func (q *MatchAllQuery) GetBoost() float64 {
+	return *q.boost
+}

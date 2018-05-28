@@ -98,3 +98,7 @@ func (q *NestedQuery) Source() (interface{}, error) {
 func (q *NestedQuery) SetBoost(boost float64) {
 	q.boost = &boost
 }
+
+func (q *NestedQuery) GetBoost() float64 {
+	return *q.boost
+}

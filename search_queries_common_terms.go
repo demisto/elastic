@@ -149,3 +149,7 @@ func (q *CommonTermsQuery) Name() string {
 func (q *CommonTermsQuery) SetBoost(boost float64) {
 	q.boost = &boost
 }
+
+func (q *CommonTermsQuery) GetBoost() float64 {
+	return *q.boost
+}

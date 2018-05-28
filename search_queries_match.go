@@ -201,3 +201,7 @@ func (q *MatchQuery) Name() string {
 func (q *MatchQuery) SetBoost(boost float64) {
 	q.boost = &boost
 }
+
+func (q *MatchQuery) GetBoost() float64 {
+	return *q.boost
+}

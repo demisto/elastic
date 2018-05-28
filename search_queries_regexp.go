@@ -94,3 +94,7 @@ func (q *RegexpQuery) Name() string {
 func (q *RegexpQuery) SetBoost(boost float64) {
 	q.boost = &boost
 }
+
+func (q *RegexpQuery) GetBoost() float64 {
+	return *q.boost
+}

@@ -99,3 +99,7 @@ func (q *HasParentQuery) Source() (interface{}, error) {
 func (q *HasParentQuery) SetBoost(boost float64) {
 	q.boost = &boost
 }
+
+func (q *HasParentQuery) GetBoost() float64 {
+	return *q.boost
+}

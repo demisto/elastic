@@ -133,3 +133,7 @@ func (q *HasChildQuery) Source() (interface{}, error) {
 func (q *HasChildQuery) SetBoost(boost float64) {
 	q.boost = &boost
 }
+
+func (q *HasChildQuery) GetBoost() float64 {
+	return *q.boost
+}

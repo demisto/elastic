@@ -91,3 +91,7 @@ func (q *MatchPhraseQuery) Name() string {
 func (q *MatchPhraseQuery) SetBoost(boost float64) {
 	q.boost = &boost
 }
+
+func (q *MatchPhraseQuery) GetBoost() float64 {
+	return *q.boost
+}

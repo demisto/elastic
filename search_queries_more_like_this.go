@@ -286,6 +286,10 @@ func (q *MoreLikeThisQuery) SetBoost(boost float64) {
 	q.boost = &boost
 }
 
+func (q *MoreLikeThisQuery) GetBoost() float64 {
+	return *q.boost
+}
+
 // -- MoreLikeThisQueryItem --
 
 // MoreLikeThisQueryItem represents a single item of a MoreLikeThisQuery
