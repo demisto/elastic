@@ -94,3 +94,7 @@ func (q *NestedQuery) Source() (interface{}, error) {
 	}
 	return query, nil
 }
+
+func (q *NestedQuery) SetBoost(boost float64) {
+	q.boost = &boost
+}

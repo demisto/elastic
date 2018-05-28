@@ -66,3 +66,7 @@ func (q *TermQuery) SetName(name string) {
 func (q *TermQuery) Name() string {
 	return q.name
 }
+
+func (q *TermQuery) SetBoost(boost float64) {
+	q.boost = &boost
+}

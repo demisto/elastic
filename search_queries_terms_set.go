@@ -104,3 +104,7 @@ func (q *TermsSetQuery) SetName(name string) {
 func (q *TermsSetQuery) Name() string {
 	return q.name
 }
+
+func (q *TermsSetQuery) SetBoost(boost float64) {
+	q.boost = &boost
+}

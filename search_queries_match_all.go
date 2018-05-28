@@ -49,3 +49,7 @@ func (q MatchAllQuery) Source() (interface{}, error) {
 	}
 	return source, nil
 }
+
+func (q *MatchAllQuery) SetBoost(boost float64) {
+	q.boost = &boost
+}

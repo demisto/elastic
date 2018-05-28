@@ -348,3 +348,7 @@ func (q *QueryStringQuery) Source() (interface{}, error) {
 
 	return source, nil
 }
+
+func (q *QueryStringQuery) SetBoost(boost float64) {
+	q.boost = &boost
+}

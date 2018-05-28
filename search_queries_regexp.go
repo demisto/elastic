@@ -90,3 +90,7 @@ func (q *RegexpQuery) SetName(name string) {
 func (q *RegexpQuery) Name() string {
 	return q.name
 }
+
+func (q *RegexpQuery) SetBoost(boost float64) {
+	q.boost = &boost
+}

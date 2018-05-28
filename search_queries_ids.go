@@ -74,3 +74,7 @@ func (q *IdsQuery) Source() (interface{}, error) {
 
 	return source, nil
 }
+
+func (q *IdsQuery) SetBoost(boost float64) {
+	q.boost = &boost
+}

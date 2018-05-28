@@ -95,3 +95,7 @@ func (q *HasParentQuery) Source() (interface{}, error) {
 	}
 	return source, nil
 }
+
+func (q *HasParentQuery) SetBoost(boost float64) {
+	q.boost = &boost
+}

@@ -273,3 +273,7 @@ func (q *MultiMatchQuery) Source() (interface{}, error) {
 	}
 	return source, nil
 }
+
+func (q *MultiMatchQuery) SetBoost(boost float64) {
+	q.boost = &boost
+}

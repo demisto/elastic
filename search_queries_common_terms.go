@@ -145,3 +145,7 @@ func (q *CommonTermsQuery) SetName(name string) {
 func (q *CommonTermsQuery) Name() string {
 	return q.name
 }
+
+func (q *CommonTermsQuery) SetBoost(boost float64) {
+	q.boost = &boost
+}

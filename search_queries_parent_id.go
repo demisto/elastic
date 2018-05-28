@@ -97,3 +97,7 @@ func (q *ParentIdQuery) Source() (interface{}, error) {
 	}
 	return source, nil
 }
+
+func (q *ParentIdQuery) SetBoost(boost float64) {
+	q.boost = &boost
+}

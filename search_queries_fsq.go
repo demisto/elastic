@@ -158,3 +158,7 @@ func (q *FunctionScoreQuery) Source() (interface{}, error) {
 
 	return source, nil
 }
+
+func (q *FunctionScoreQuery) SetBoost(boost float64) {
+	q.boost = &boost
+}

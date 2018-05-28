@@ -244,3 +244,7 @@ func (q *SimpleQueryStringQuery) Source() (interface{}, error) {
 
 	return source, nil
 }
+
+func (q *SimpleQueryStringQuery) SetBoost(boost float64) {
+	q.boost = &boost
+}

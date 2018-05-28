@@ -95,3 +95,7 @@ func (q *BoostingQuery) Source() (interface{}, error) {
 
 	return query, nil
 }
+
+func (q *BoostingQuery) SetBoost(boost float64) {
+	q.boost = &boost
+}

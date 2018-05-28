@@ -213,3 +213,7 @@ func (q *BoolQuery) Source() (interface{}, error) {
 
 	return query, nil
 }
+
+func (q *BoolQuery) SetBoost(boost float64) {
+	q.boost = &boost
+}

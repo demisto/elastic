@@ -282,6 +282,10 @@ func (q *MoreLikeThisQuery) Source() (interface{}, error) {
 	return source, nil
 }
 
+func (q *MoreLikeThisQuery) SetBoost(boost float64) {
+	q.boost = &boost
+}
+
 // -- MoreLikeThisQueryItem --
 
 // MoreLikeThisQueryItem represents a single item of a MoreLikeThisQuery

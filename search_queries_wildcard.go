@@ -89,3 +89,7 @@ func (q *WildcardQuery) SetName(name string) {
 func (q *WildcardQuery) Name() string {
 	return q.name
 }
+
+func (q *WildcardQuery) SetBoost(boost float64) {
+	q.boost = &boost
+}
