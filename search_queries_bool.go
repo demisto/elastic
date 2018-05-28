@@ -77,6 +77,18 @@ func (q *BoolQuery) QueryName(queryName string) *BoolQuery {
 	return q
 }
 
+func (q *BoolQuery) MustClauses() []Query {
+	return q.mustClauses
+}
+
+func (q *BoolQuery) MustNotClauses() []Query {
+	return q.mustNotClauses
+}
+
+func (q *BoolQuery) ShouldClauses() []Query {
+	return q.shouldClauses
+}
+
 // Creates the query source for the bool query.
 func (q *BoolQuery) Source() (interface{}, error) {
 	// {
